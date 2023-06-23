@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 const buscarMarca = (array, filtro) => {
   return array.filter(carro => carro.marca === filtro);
 };
@@ -8,9 +7,8 @@ const buscarModelo = (array, filtro) => {
   return array.filter(carro => carro.modelo === filtro);
 };
 const ranking = (array, filtro) => {
-  return array.filter(carro => carro.calificacion > filtro );
+  return array.filter(carro => carro.calificacion > filtro);
 };
-
 
 function App() {
   const [filtroMarca, setFiltroMarca] = useState("");
@@ -19,8 +17,6 @@ function App() {
   const [resMarca, setResMarca] = useState("");
   const [resModelo, setResModelo] = useState("");
   const [resRanking, setResRanking] = useState("");
-
-
 
   const array = [];
 
